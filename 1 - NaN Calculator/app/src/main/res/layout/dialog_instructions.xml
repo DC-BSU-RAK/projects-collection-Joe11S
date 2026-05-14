@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How to Balance"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Drag and Drop\nLong-press any weight from the bottom tray and drag it into the left or right pan.\n\n2. Find Equilibrium\nThe beam will tilt toward the heavier side. Add or remove weights to make the beam perfectly level.\n\n3. Remove Weights\nDrag any item out of the pan and drop it back into the bottom tray to remove it."
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp"/>
+
+        <Button
+            android:id="@+id/btnGotIt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Got it!"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</LinearLayout>
