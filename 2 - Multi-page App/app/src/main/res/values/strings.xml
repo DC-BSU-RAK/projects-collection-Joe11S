@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Greeting Card Generator</string>
+    <string-array name="card_presets">
+        <item>Birthday Celebration</item>
+        <item>Romantic Gesture</item>
+        <item>Professional Thank You</item>
+        <item>Just Because</item>
+    </string-array>
+</resources>

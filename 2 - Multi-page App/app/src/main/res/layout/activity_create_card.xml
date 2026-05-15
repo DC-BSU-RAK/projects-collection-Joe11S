@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/bg_primary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CreateCardActivity">
+
+    <TextView
+        android:id="@+id/tvCreateTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Design Your Card"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/etRecipient"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Who is this for?"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/tvCreateTitle" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Message"
+        android:gravity="top"
+        android:lines="3"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/etRecipient" />
+
+    <TextView
+        android:id="@+id/tvThemeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select a Theme:"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/etMessage"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerPresets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/card_presets"
+        app:layout_constraintTop_toBottomOf="@id/tvThemeLabel" />
+
+    <Button
+        android:backgroundTint="@color/action_primary"
+        android:id="@+id/btnPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Preview"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPresets" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

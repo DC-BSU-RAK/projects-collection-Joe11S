@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_primary">#F8F9FA</color>
+    <color name="action_primary">#A179FF</color>
+    <color name="action_secondary">#03DAC6</color>
+    <color name="text_dark">#1C1B1F</color>
+    <color name="container">#FFFFFF</color>
+    <color name="warning">#B00020</color>
+    <color name="bg_birthday">#FFED54</color>
+    <color name="bg_romantic">#FFC9CE</color>
+    <color name="bg_thank_you">#6DD3FF</color>
+    <color name="bg_just_because">#CAFFCE</color>
+</resources>
